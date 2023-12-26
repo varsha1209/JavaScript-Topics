@@ -4,13 +4,19 @@ const child = document.querySelector(".child");
 
 grandParent.addEventListener("click", () => {
     alert("grandParent");
+},{
+    capture: true
 })
 
 parent.addEventListener("click", () => {
     alert("parent");
+}, {
+    capture: true
 })
 
 child.addEventListener("click", (e) => {
-    e.stopPropagation(); //  it stops the event from bubbling up to its parent elements
+    //e.stopPropagation(); //  it stops the event from bubbling up to its parent elements
     alert("child");
+},{
+    capture: true
 })
