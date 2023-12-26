@@ -10,6 +10,7 @@ parent.addEventListener("click", () => {
     alert("parent");
 })
 
-child.addEventListener("click", () => {
+child.addEventListener("click", (e) => {
+    e.stopPropagation(); //  it stops the event from bubbling up to its parent elements
     alert("child");
 })
