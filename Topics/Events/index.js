@@ -2,7 +2,8 @@ const grandParent = document.querySelector(".grandParent");
 const parent = document.querySelector(".parent");
 const child = document.querySelector(".child");
 
-grandParent.addEventListener("click", () => {
+grandParent.addEventListener("click", (e) => {
+    e.stopPropagation(); //  it stops the event from capturing up to its parent elements
     alert("grandParent");
 },{
     capture: true
