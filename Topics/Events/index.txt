@@ -1,0 +1,8 @@
+ Event Propagation : Event propagation in JavaScript refers to the mechanism by which events are handled and passed through the DOM (Document Object Model) hierarchy. When an event occurs on an element, like a click or a keypress, it triggers an event object and goes through a process known as event propagation. There are two types of event propagation in JavaScript 
+
+ 1) Event Bubbling: This is the default behavior in which the event starts at the target element and then "bubbles up" through its ancestors in the DOM hierarchy until it reaches the root element (document). During this process, event handlers attached to ancestor elements can also respond to the same event.
+
+2) Event Capturing (or Trickling): This is the opposite of event bubbling. In event capturing, the event is first captured at the root element (document) and then travels downward through the DOM hierarchy until it reaches the target element.
+
+
+Event Delegation :Event delegation is a concept in JavaScript where instead of attaching an event listener to individual elements, you attach a single event listener to a parent element that will react to events that occur on its children. When an event occurs on a child element, it bubbles up to the parent element, and because of event propagation, the parent element's event listener can handle it.
