@@ -1,0 +1,6 @@
+This inside a function
+Normally it targets the window object.
+In it, this points to the owner of the function call, I repeat, THE FUNCTION CALL, and NOT the function itself. The same function can have different owners in different scenarios.
+
+**What about Arrow Functions? **
+It takes it's this from the outer “normal” function, this won't make much sense now, since as you can see it’s also pointing to window object.
