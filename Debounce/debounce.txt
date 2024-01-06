@@ -1,0 +1,1 @@
+Debouncing is a powerful technique used to optimize event handling by delaying the execution of function calls.
