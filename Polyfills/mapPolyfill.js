@@ -22,5 +22,4 @@ const result = num.myMap((num, i, arr) => {
 })
 
 console.log(result);
-console.log(num);
 // output - [ 3, 6, 9, 12 ]
